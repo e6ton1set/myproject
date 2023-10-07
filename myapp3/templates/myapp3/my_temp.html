@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Мой первый шаблон Django {% endblock %}
+
+{% block content %}
+    <h1>Привет, {{ name }}!</h1>
+    <style>
+        h1 { text-align: center; text-transform: uppercase; color: #6a00d370; }
+    </style>
+    <ul>
+        {% for item in content %}
+        <li> {{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
